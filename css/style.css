@@ -1,0 +1,222 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size:62.5% /*transforme les paragraphe en 10px*/
+}
+
+body
+{
+    font-family: sans-serif, serif;
+    background: #dddddd;
+    font-size: 1.6rem;
+    padding: 10px;
+    color: white;
+    line-height: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header
+{
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+header a
+{
+    padding: 20px;
+    display: block;
+    font-size: 2rem;
+}
+
+li > a:hover
+{
+    color: #72bff3;
+    background: white;
+}
+
+header > img
+{
+    width: 100%;
+    margin: auto;
+}
+
+.logo
+{
+    width: 100px;
+}
+
+nav
+{
+    background: #72bff3;
+    list-style: none;
+    text-align: center;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+li
+{
+    list-style: none;
+    text-decoration: none;
+}
+
+section
+{
+    background: #110011;
+    padding: 20px;
+}
+
+img, iframe
+{
+    max-width: 100%;
+    width: 100%;
+}
+
+section > img
+{
+    width: 85%;
+}
+
+section h1, section h2
+{
+    color: #72bff3;
+    text-transform: uppercase;
+    border-bottom: 1px solid #72bff3;
+    padding-bottom: 15px;
+}
+
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+.flex > img 
+{
+    width: 150px;
+    margin: 10px;
+}
+
+.team > img
+{
+    width: 100px;
+}
+
+section p, footer p
+{
+    color: white;
+}
+
+iframe
+{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+aside
+{
+    background: #72bff3;
+    padding: 20px;
+    display: none;
+    color: black;
+}
+
+aside h2
+{
+    color: black;
+}
+
+form
+{
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+
+form > input, textarea
+{
+    margin: 10px;
+    width: 100%;
+    border: solid white 2px;
+    padding: 10px;
+    background-color: #110011;
+    color: white;
+}
+
+form > button 
+{
+    padding: 5px 20px;
+    background-color: #72bff3;
+    border: none;
+    color: white;
+    margin: auto;
+}
+
+footer
+{
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+footer img 
+{
+    max-width: 120px;
+}
+
+/* Tablette */
+@media (min-width: 768px)
+{
+    aside
+    {
+        display: block;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px)
+{
+    section
+    {
+        width: 65.5%;
+    }
+
+    aside
+    {
+        width: 34.5%;
+        vertical-align: top;
+    }
+
+    nav ul
+    {
+        display: flex;
+    }
+
+    li
+    {
+        flex: 1;
+    }
+
+    main
+    {
+        display: flex;
+    }
+}
